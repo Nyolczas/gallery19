@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery-style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="img/missU/smalls/02_Water_Interakt_3.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/missU/smalls/10_Planets_Interakt_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/missU/smalls/06_HeaveNHell_Interakt_2.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/missU/smalls/07_HeaveNHell_Kifuto.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/missU/smalls/12_Planets_Full.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="img/missU/02_Water_Interakt_3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="img/missU/10_Planets_Interakt_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="img/missU/06_HeaveNHell_Interakt_2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/missU/07_HeaveNHell_Kifuto.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/missU/12_Planets_Full.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="bottom">
+                <div class="column">
+                    <img class="demo cursor" src="img/missU/02_Water_Interakt_3.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Water Interaction">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/missU/10_Planets_Interakt_2.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Planet Interaction">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/missU/06_HeaveNHell_Interakt_2.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Heaven and Hell Interaction">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/missU/07_HeaveNHell_Kifuto.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Heaven and Hell Catwalk">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/missU/12_Planets_Full.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Planets Total">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lightbox-modal.js"></script>
+</body>
+
+</html>
