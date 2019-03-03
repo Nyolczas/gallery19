@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+:root {
+  --modalTop: 90vh;
+  --modalMid: 4vh;
+  --modalBottom: 6vh;
+}
+
 .row {
   display: flex;
   align-items: stretch;
@@ -12,13 +18,14 @@
 }
 
 .bottom {
-  height: 20vh;
+  height: var(--modalBottom);
   display: flex;
   justify-content: center;
+  max-width: 100vw;
 }
 
 .bottom--img-container {
-  height: 10vh;
+  height: var(--modalBottom);
 }
 
 .column-5 {
@@ -44,7 +51,7 @@
 .modal-content {
   position: relative;
   display: grid;
-  grid-template-rows: 85% 5% 10%;
+  grid-template-rows: 90% 4% 6%;
   width: 100vw;
   height: 100vh;
 }
@@ -150,6 +157,7 @@
 img.hover-shadow {
   transition: 0.3s;
   width:100%;
+  margin-bottom: -5px;
 }
 
 .hover-shadow:hover {
