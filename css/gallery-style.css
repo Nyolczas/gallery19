@@ -10,6 +10,15 @@
   --modalBottom: 6vh;
 }
 
+.showSingle {
+  background-color: green;
+  display: block;
+}
+
+.targetDiv {
+  display: none;
+}
+
 .row {
   display: flex;
   align-items: stretch;
