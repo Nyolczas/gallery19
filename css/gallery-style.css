@@ -11,7 +11,7 @@
 }
 
 .showSingle {
-  background-color: green;
+  background: linear-gradient(to right, var(--midBg), var(--menuBg));
   display: block;
 }
 
